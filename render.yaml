@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: gl-logistica-aduanera
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false

@@ -1,0 +1,5 @@
+/* Portada simplificada: sin simulación de seguimiento de carga. */
+.hero-grid{grid-template-columns:minmax(0,720px)}
+.hero-copy{position:relative;z-index:1}
+.hero::before{content:'';position:absolute;right:-180px;top:105px;width:550px;height:550px;border:1px solid rgba(149,190,255,.17);border-radius:50%;box-shadow:0 0 0 72px rgba(149,190,255,.025),0 0 0 145px rgba(149,190,255,.018)}
+@media(max-width:800px){.hero::before{right:-330px;top:180px;width:490px;height:490px}}
